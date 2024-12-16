@@ -7,6 +7,8 @@ const songs = [
   { title: "CADA DÍA", artist: "KCHIPORROS", img: "images/cada_dia.jpg", position: 4, favorite: false }
 ];
 
+console.log("Musicas generadas en el top", songs);
+
 // Función para asignar favoritos aleatoriamente
 function assignFavorites() {
   songs.forEach(song => song.favorite = false);
@@ -62,9 +64,12 @@ document.getElementById("shuffleBtn").addEventListener("click", () => {
   songs.sort(() => Math.random() - 0.5);
   assignFavorites();
   displayRanking();
+  console.log("Mezclar ranking de forma aleatoria");
 });
 
 function createImage() {
+  console.log("Creando imagen...");
+
   const container = document.getElementById("ranking");
 
   html2canvas(container, { scale: 1 }).then(canvas => {
@@ -90,6 +95,7 @@ function createImage() {
       a.href = image;
       a.download = "ranking-musical.png";
       a.click();
+      console.log("Descargar la imagen en PNG");
     };
 
     // Botón para exportar a PDF
@@ -106,6 +112,7 @@ function createImage() {
       try {
         pdf.addImage(image, "PNG", 0, 0, pdfWidth, pdfHeight); // Añadir imagen al PDF
         pdf.save("ranking-musical.pdf");
+        console.log("Exportar la imagen en PDF");
       } catch (error) {
         console.error("Error al generar el PDF:", error);
         alert("Hubo un problema al generar el archivo PDF. Intenta nuevamente.");
