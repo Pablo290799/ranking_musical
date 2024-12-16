@@ -1,7 +1,7 @@
 // Musicas a buscar dentro del top(estático)
 const songs = [
   { title: "WITHOUT ME", artist: "EMINEM", img: "images/without_me.jpg", position: 0, favorite: false },
-  { title: "GASOLINA", artist: "DADDY YANKEE", img: "images/gasolina.jpg", position: 1, favorite: false },
+  { title: "ÑERI", artist: "TRUENO", img: "images/ñeri.jpg", position: 1, favorite: false },
   { title: "KHÉ", artist: "RAUW ALEJANDRO & ROMEO SANTOS", img: "images/khe.jpg", position: 2, favorite: false },
   { title: "DEGENERE", artist: "MYKE TOWERS & BENNY BLANCO", img: "images/degenere.jpg", position: 3, favorite: false },
   { title: "CADA DÍA", artist: "KCHIPORROS", img: "images/cada_dia.jpg", position: 4, favorite: false }
