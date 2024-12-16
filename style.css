@@ -73,32 +73,33 @@ ul#ranking li .song-info {
   flex-direction: column;
   flex: 1;
   gap: 5px; /* Espacio entre el título y el artista */
+  align-items: flex-start;
 }
 
 /* Trapecio rectángulo con inclinación a la derecha para el título */
 ul#ranking li .song-info .title {
   position: relative;
-  background: linear-gradient(135deg, #ee0707, #710404); /* Gradiente para el título */
+  background: linear-gradient(135deg, #ff6f61, #710404); /* Gradiente para el título */
   padding: 10px;
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   border-radius: 5px;
-  display: inline-block;
+  width: fit-content; /* Ajusta el ancho al contenido */
   clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
 }
 
 /* Trapecio rectángulo con inclinación a la derecha para el artista */
 ul#ranking li .song-info .artist {
   position: relative;
-  background: linear-gradient(135deg, #eb8c07, #93ffc0); /* Gradiente para el artista */
+  background: linear-gradient(135deg, #d5810b, #93ffc0); /* Gradiente para el artista */
   padding: 8px;
   color: white;
   font-size: 1.3rem;
   text-align: center;
   border-radius: 5px;
-  display: inline-block;
+  width: fit-content; /* Ajusta el ancho al contenido */
   clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
 }
 
